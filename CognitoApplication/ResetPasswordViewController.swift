@@ -46,7 +46,7 @@ class ResetPasswordViewController: UIViewController {
         self.lastNameInput.addTarget(self, action: #selector(inputDidChange(_:)), for: .editingChanged)
     }
     
-    func inputDidChange(_ sender:AnyObject) {
+    @objc func inputDidChange(_ sender:AnyObject) {
         if (self.newPasswordInput.text != nil && self.firstNameInput != nil && self.lastNameInput != nil) {
             self.newPasswordButton.isEnabled = true
         } else {

@@ -49,7 +49,7 @@ class SignupViewController : UIViewController {
         self.phoneNumber.addTarget(self, action: #selector(inputDidChange(_:)), for: .editingChanged)
     }
     
-    func inputDidChange(_ sender:AnyObject) {
+    @objc func inputDidChange(_ sender:AnyObject) {
         if(firstName.text == nil || lastName.text == nil) {
             self.submitButton.isEnabled = false
             return

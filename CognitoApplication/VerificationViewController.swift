@@ -49,7 +49,7 @@ class VerificationViewController: UIViewController {
         verificationLabel.text = "Please enter the code that was sent to \(medium) at \(destination)"
     }
     
-    func inputDidChange(_ sender:AnyObject) {
+    @objc func inputDidChange(_ sender:AnyObject) {
         if(verificationField.text == nil) {
             self.verifyButton.isEnabled = false
             return

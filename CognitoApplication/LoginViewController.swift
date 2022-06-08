@@ -62,7 +62,7 @@ class LoginViewController: UIViewController {
         self.performSegue(withIdentifier: "ForgotPasswordSegue", sender: self)
     }
     
-    func inputDidChange(_ sender:AnyObject) {
+    @objc func inputDidChange(_ sender:AnyObject) {
         if (self.usernameInput?.text != nil && self.passwordInput?.text != nil) {
             self.loginButton?.isEnabled = true
         } else {

@@ -3,4 +3,6 @@ Pods
 CognitoApplication.xcodeproj/project.xcworkspace/xcuserdata
 CognitoApplication.xcodeproj/xcuserdata
 CognitoApplication.xcworkspace/xcuserdata
-CognitoConfig.plist
+.DS_Store
+.vscode/
+
